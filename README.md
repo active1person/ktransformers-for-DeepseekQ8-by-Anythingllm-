@@ -20,8 +20,7 @@
 -  按照官方给的教程安装了Ktransformers，并且在上面部署了Deepseek之后，按照官方的demo启动了我的本地大模型，成功搭建了大模型底座
 -  但是对于工程而言，一个底座还是不够，需要上层服务提供如文件读取、知识库整合等功能，当前已经有许多成熟的工具。
 -  例如：Anythingllm、dify
--  我使用的是本地化部署的Anythingllm，可以无缝衔接采用Ollama部署的本地大模型，但是对于Ktransformers部署的大模型不能直接被使用
--  截止目前，我还没有发现Ktransformers官方有支持流式响应生成，local_chat.py只能流式打印在控制台上，不能用接口返回
+-  我使用的是本地化部署的Anythingllm，可以无缝衔接采用Ollama部署的本地大模型，但是对于Ktransformers部署的大模型不能直接被使用（server暂未跑通）
 
 ###  解决方案
 -  由于Anythingllm这个工具可以支持一切兼容OpenAI接口规范的接口，于是我们需要将基于Ktransformers部署的deepseek封装为兼容OpenAI的接口提供服务
